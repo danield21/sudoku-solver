@@ -1,0 +1,19 @@
+<html>
+	<head>
+		<title>Sudoku Solver</title>
+		<link href="style.css" rel="stylesheet"/>
+		<script src="main.js"></script>
+	</head>
+	<body>
+		<form class="start active">
+			<label for="level">What level is the Sudoku?</label>
+			<input id="level" type="number" name="level" min="1" required>
+			<button type="submit">Submit</button>
+		</form>
+		<form class="puzzle">
+			<button type="submit">Solve</button>
+			<button type="reset">Clear</button>
+			<table class="grid"></table>
+		</form>
+	</body>
+</html>

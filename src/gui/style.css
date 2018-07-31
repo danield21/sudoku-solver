@@ -1,0 +1,68 @@
+body > * {
+	display: none;
+}
+body > .active {
+	display: block;
+}
+button {
+	color: white;
+	background-color: black;
+	border: none;
+	padding: .5em 2em;
+	transition: background-color .3s;
+}
+button:hover {
+	background-color: #555;
+}
+button:active {
+	background-color: #333;
+}
+input {
+	width: 3rem;
+	text-align: center;
+}
+.start input {
+	border-width: 0 0 1px 0;
+	border-color: black;
+}
+.puzzle .grid {
+	margin-top: .5em;
+	border-collapse: collapse;
+}
+.puzzle td {
+	border: black 0px solid;
+	border-bottom-width: 1px;
+	border-right-width: 1px;
+}
+.puzzle td input {
+	padding: .5em;
+	border: none;
+	font-size: 1.3em;
+	font-weight: bold;
+}
+.puzzle table input.added {
+	background-color: #a3ff8c;
+	animation: add-answer 1s;
+}
+.puzzle tr:last-child td {
+	border-bottom-width: 0;
+}
+.puzzle tr td:last-child {
+	border-right-width: 0;
+}
+.puzzle td.group-v {
+	border-bottom-width: 5px;
+}
+.puzzle td.group-h {
+	border-right-width: 5px;
+}
+@keyframes add-answer {
+	from {
+		color: transparent;
+		background-color: transparent
+	}
+	to {
+		color: black;
+		background-color: #a3ff8c;
+	}
+}
